@@ -7,6 +7,7 @@ import { Button } from "@/styles/Buttons";
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import { About } from "@/components/About";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -29,7 +30,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
 
   return (
     <main id="home">
@@ -58,12 +59,8 @@ export const Home = (): JSX.Element => {
               projects
             </Text>
             <Text type="body1" color="grey2">
-              In 2022, I decided to dive headlong into the world of programming
-              and dedicated all my time to studying the main technologies on the
-              market. I started the Systems Analysis and Development course at
-              FAM, along with the Full Stack Development course at Kenzie
-              Academy Brasil, where I carried out several projects that allowed
-              me to gain greater knowledge in the area.
+              Discover here in this environment, created especially for you, all
+              my projects and technologies
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -91,6 +88,7 @@ export const Home = (): JSX.Element => {
           </HeaderContent>
         </Container>
       </Header>
+      <About />
       <ProjectsArea id="projects">
         <Container>
           <ProjectAreaWrapperColumns>
